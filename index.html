@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAJ's Calulator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="calc-main">
+      <h6 class="calc-title">Stephen's calculator</h6>
+      <div class="calc-display">
+        <p id="output">0</p>
+      </div>
+      <div class="calc-layout">
+        <button id="one" onclick="display('1')">1</button>
+        <button id="two" onclick="display('2')">2</button>
+        <button id="three" onclick="display('3')">3</button>
+        <button id="divide" onclick="display('/')">/</button>
+
+        <button id="four" onclick="display('4')">4</button>
+        <button id="five" onclick="display('5')">5</button>
+        <button id="six" onclick="display('6')">6</button>
+        <button id="multiply" onclick="display('x')">x</button>
+
+        <button id="seven" onclick="display('7')">7</button>
+        <button id="eight" onclick="display('8')">8</button>
+        <button id="nine" onclick="display('9')">9</button>
+        <button id="minus" onclick="display('-')">-</button>
+
+        <button id="period" onclick="display('.')">.</button>
+        <button id="zero" onclick="display('0')">0</button>
+        <button id="clear">c</button>
+        <button id="add" onclick="display('+')">+</button>
+
+        <button id="equal" onclick="solution()">=</button>
+      </div>
+    </div>
+  </body>
+</html>

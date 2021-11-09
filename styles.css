@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.calc-main {
+  position: relative;
+  width: 370px;
+  height: 670px;
+  margin: auto;
+  border: 16px solid black;
+  border-top-width: 40px;
+  border-bottom-width: 20px;
+  border-radius: 20px;
+  background-color: lightgray;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  display: flex;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.calc-display {
+  height: 165px;
+  width: 338px;
+  color: black;
+  border: 1px solid #7fa37c;
+  background-color: #7fa37c;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.calc-layout {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 5px;
+  gap: 5px;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  margin: 3px;
+  font-family: Tahoma, sans-serif;
+  font-size: 30px;
+  border-radius: 10px;
+  color: white;
+  background-color: #6d7073;
+  cursor: pointer;
+}
+
+#clear {
+  background: #7cbb00;
+  color: white;
+}
+
+#equal {
+  width: 320px;
+  color: white;
+  background: #f65314;
+  grid-column: 1 / span 4;
+  grid-row: 5;
+}
+
+#add,
+#minus,
+#multiply,
+#divide {
+  background: #00a1f1;
+  color: white;
+}
+
+#period {
+  background: #ffbb00;
+  color: white;
+}
+
+button:hover,
+#add:hover,
+#multiply:hover,
+#divide:hover,
+#clear:hover,
+#minus:hover,
+#period:hover,
+#equal:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
