@@ -1,7 +1,7 @@
 var value;
 var total;
 var answer;
-
+var output = output
 
 document.getElementById("numberzero").addEventListener("click" , numzero);
 document.getElementById("one").addEventListener("click" , numone);
@@ -29,118 +29,118 @@ function numone()
 {
     zero()
     value = "1";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
 function numtwo()
 {
     zero()
     value = "2";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 function numthree()
 {
     zero()
     value = "3";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
 function numfour()
 {   zero()
     value = "4";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
 function numfive()
 {
     zero()
     value = "5";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
 function numsix()
 {
     zero()
     value = "6";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
 function numseven()
 {
     zero()
     value = "7";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
 function numeight()
 {
     zero()
     value = "8";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
 function numnine()
 {
     zero()
     value = "9";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
 function addition()
 {
     value = "+";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
 function multiplication()
 {
     value = "*";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
 function substraction()
 {
     value = "-";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
 function division()
 {
     value = "/";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
 function per()
 {
     value = ".";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
 function cleared()
 {
-document.getElementById("output").innerHTML = "0";
+output.innerHTML = "0";
 }
 
 function zero()
 {
-    value = document.getElementById("output").innerHTML;
+    value = output.innerHTML;
     if (value == "0")
     {
         value = ""
-        document.getElementById("output").innerHTML = value;
+        output.innerHTML = value;
     }
 }
 
 function display(value)
 {
     zero()
-    document.getElementById("output").innerHTML += value;
+    output.innerHTML += value;
 }
 
 function solution()
 {
     zero()
-     total = document.getElementById("output").innerHTML;
+     total = output.innerHTML;
      answer = eval(total);
     document.getElementById('output').innerHTML = answer;
 }
@@ -148,6 +148,6 @@ function solution()
 function numzero()
 {
     value = "0";
-document.getElementById("output").innerHTML += value;
+output.innerHTML += value;
 }
 
