@@ -1,7 +1,8 @@
 var value;
 var total;
 var answer;
-var output = output
+var output = document.getElementById("output");
+
 
 document.getElementById("numberzero").addEventListener("click" , numzero);
 document.getElementById("one").addEventListener("click" , numone);
@@ -13,7 +14,6 @@ document.getElementById("six").addEventListener("click", numsix);
 document.getElementById("seven").addEventListener("click", numseven);
 document.getElementById("eight").addEventListener("click", numeight);
 document.getElementById("nine").addEventListener("click", numnine);
-
 
 document.getElementById("clear").addEventListener("click", cleared);
 document.getElementById("add").addEventListener("click", addition);
